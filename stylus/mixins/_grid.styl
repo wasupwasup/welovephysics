@@ -1,0 +1,7 @@
+ancho_fixed = (columnas * ancho_columnas) + (columnas * ancho_margen) * 1px
+ancho_total = 100%
+margen-total = (ancho_total * ((ancho_margen * .5) / ancho_fixed))
+columnasMixin(tipo_columna)
+	width: ((((( ancho_columnas + ancho_margen) * tipo_columna) - ancho_margen) * ancho_total) / (ancho_fixed))
+	margin-left: margen-total
+	margin-right: margen-total

@@ -1,0 +1,36 @@
+form(outline = 1px solid blue,
+	direction = column,
+	size=18em,
+	sb-inputs=1.2em,
+	padding=1.2em,
+	form-color=white,
+	input-color=white,
+	border=1px solid black,
+	input-height=2em,
+	color = black,
+	pcolor=black)
+	
+	width size
+	padding padding
+	display flex
+	flex-direction column
+	background-color form-color
+	color color
+	input[type="text"], textarea
+		outline none
+		border border
+		padding-left 1em
+		margin-bottom sb-inputs
+		background-color input-color
+	input[type="text"]
+		height input-height
+	input[type="text"]:focus, textarea:focus
+		outline outline
+	::-webkit-input-placeholder
+		color pcolor
+	:-moz-placeholder
+		color pcolor
+	::-moz-placeholder
+		color pcolor
+	:-ms-input-placeholder
+		color pcolor
